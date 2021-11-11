@@ -14,6 +14,8 @@ public class DragAndDropTest {
         actions().dragAndDrop($("#column-a"),$("#column-b")).perform();
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
+
+        //Тест падает. Значение не перемещается.
     }
 
     @Test
